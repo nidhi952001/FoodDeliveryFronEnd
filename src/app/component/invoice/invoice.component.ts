@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { Invoice } from 'src/app/class/invoice';
-import { InvoiceService } from 'src/app/service/invoice.service';
 import { PaymentModuleComponent } from '../payment-module/payment-module.component';
+import { Invoice } from 'src/app/class/invoice';
 import { MatDialog } from '@angular/material/dialog';
+import { InvoiceService } from 'src/app/service/invoice.service';
 
 @Component({
   selector: 'app-invoice',
   templateUrl: './invoice.component.html',
   styleUrls: ['./invoice.component.css']
 })
-export class InvoiceComponent implements OnInit {
+export class InvoiceComponent implements OnInit{
 
   public invoiceData:Invoice[]=[]
   currentInvoice!:Invoice;

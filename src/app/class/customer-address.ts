@@ -7,4 +7,5 @@ export class CustomerAddress {
         country:string,
         pincode:number
     ){  }
+
 }

@@ -1,12 +1,9 @@
-
 import { Component, Inject, OnInit } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Cart } from 'src/app/class/cart';
-import { Invoice } from 'src/app/class/invoice';
-import { Item } from 'src/app/class/item';
-import { CartService } from 'src/app/service/cart.service';
-import { InvoiceService } from 'src/app/service/invoice.service';
 import { PaymentComponent } from '../payment/payment.component';
+import { Cart } from 'src/app/class/cart';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { InvoiceService } from 'src/app/service/invoice.service';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-payment-module',

@@ -1,8 +1,6 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Restaurant, RestaurantsComponent } from '../component/restaurants/restaurants.component';
-
-
+import { Injectable } from '@angular/core';
+import { Restaurant } from '../component/restaurants/restaurants.component';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +11,6 @@ export class DataRestaurantService {
 
   retriveAllRestaurant(){
     return this.http.get<Restaurant[]>
-      (`http://localhost:8080/getAllRestaurantAddress`);
+      (`http://localhost:9999/getAllRestaurantAddress`);
   }
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">customerid</th>
+            <th scope="col">customeremail</th>
+            <th scope="col">customermobilenumber</th>
+            <th scope="col">customername</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cus of customer">
+            <td>{{cus.customerid}}</td>
+            <td>{{cus.customeremail}}</td>
+            <td>{{cus.customermobilenumber}}</td>
+            <td>{{cus.customername}}</td>
+            <td>
+                <button class="btn btn-primary" (click)="customerUpdate(cus.customerid)">Update</button>
+                &nbsp;
+                <button class="btn btn-danger" (click)="customerDelete(cus.customerid)">Delete</button>
+
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+</body>
+</html>
+
+
